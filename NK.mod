@@ -1,15 +1,3 @@
-/*
- * This file implements the baseline New Keynesian model of Jordi Galí (2008): Monetary Policy, Inflation,
- * and the Business Cycle, Princeton University Press, Chapter 3, extended to include FTPL.
- *
- * Note that all model variables are expressed in deviations from steady state.
- *
- * Alterations to include FTPL dynamics made by integrating government debt and fiscal policy interactions.
- */
-
-%define whether to use interest rate or money growth rate rule 
-@#define money_growth_rule=0
-
 var pi ${\pi}$ (long_name='inflation')
     y_gap ${\tilde y}$ (long_name='output gap')
     y_nat ${y^{nat}}$ (long_name='natural output')      //(in contrast to the textbook defined in deviation from steady state)
